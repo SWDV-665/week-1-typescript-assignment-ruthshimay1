@@ -32,6 +32,6 @@ const ele = document.getElementById("grocery_list");
 // append it to the html page
 list_of_items.forEach(e => {
     const p = document.createElement("p");
-    p.textContent = `${e.name} : ${e.type} : ${e.quantity}   $${e.price} -> $${e.price_total}`;
+    p.textContent = `${e.name} : ${e.type} :  ${e.quantity}: u/p:-    $${e.price}: t/p:   $${e.price_total}`;
     ele.appendChild(p);
 });

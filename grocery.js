@@ -13,7 +13,7 @@ var Grocery = /** @class */ (function () {
 // create a list of grocery items
 // new keyword is used to instantiate objects
 var list_of_items = [
-    new Grocery("milk", "1 gallon", 3, 5.99),
+    new Grocery("milk", "one gallon", 3, 5.99),
     new Grocery("bread", "rolls", 6, 1.25),
     new Grocery("egg", "pasture raised", 11, 6.99)
 ];
@@ -23,6 +23,6 @@ var ele = document.getElementById("grocery_list");
 // append it to the html page
 list_of_items.forEach(function (e) {
     var p = document.createElement("p");
-    p.textContent = "".concat(e.name, " : ").concat(e.type, " : ").concat(e.quantity, "  -> $").concat(e.price, " -> $").concat(e.price_total);
+    p.textContent = "".concat(e.name, " : ").concat(e.type, " :  ").concat(e.quantity, ": u/p:-    $").concat(e.price, ": t/p:   $").concat(e.price_total);
     ele.appendChild(p);
 });
